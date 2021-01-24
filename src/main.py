@@ -10,7 +10,7 @@ def ensure_dir_exists(path):
 
 def take_training_photos(name, n):
     for i in range(n):
-        for face in camera.capture().faces():
+        for face in camera.cameraCapture().faces():
             normalized = face.gray().scale(100, 100)
 
             face_path = 'cropped_Faces/{}'.format(name)

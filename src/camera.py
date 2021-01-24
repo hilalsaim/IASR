@@ -2,7 +2,7 @@ import cv2
 
 from src import imageFunctions
 
-def capture():
+def cameraCapture():
     vc = cv2.VideoCapture(0,cv2.CAP_DSHOW)
     if vc.isOpened():
         _, frame = vc.read()

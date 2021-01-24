@@ -44,7 +44,6 @@ class Image:
         cv2.imshow('', self._img)
         cv2.waitKey(0)
 
-
 def load_image_from(path):
     return Image(cv2.imread(path))
 

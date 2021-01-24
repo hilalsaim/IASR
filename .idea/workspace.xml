@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a728fc98-ac8f-462a-9cd6-581e079ea1a8" name="Default Changelist" comment="add">
-      <change afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/IASR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IASR.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/face_cropper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/face_cropper.py" afterDir="false" />
+    <list default="true" id="a728fc98-ac8f-462a-9cd6-581e079ea1a8" name="Default Changelist" comment="update">
+      <change beforePath="$PROJECT_DIR$/src/eigenfaces/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eigenfaces/pca.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/face_recog.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/face_recog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gfxy.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/img_read.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/img_read.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s1/1.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s1/2.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s1/3.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s1/4.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s1/5.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s2/1.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s2/2.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s2/3.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s2/4.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s2/5.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s3/1.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s3/2.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s3/3.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s3/4.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s3/5.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s4/1.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s4/2.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s4/3.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s4/4.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s4/5.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s5/1.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s5/2.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s5/3.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s5/4.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training_images/s5/5.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webcam.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,114 +46,107 @@
     <session id="1234841457">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.29" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="jpg" value="17" />
-          <entry key="py" value="13" />
-          <entry key="xml" value="3" />
+          <entry key="py" value="16" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="17" />
-          <entry key="Python" value="13" />
-          <entry key="XML" value="3" />
+          <entry key="Python" value="16" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="35" />
-          <entry key="txt" value="4" />
+          <entry key="py" value="58" />
+          <entry key="txt" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="35" />
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="Python" value="58" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FaceDataNew/s1/1.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="48" column="29" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-319">
+              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FaceDataNew/s1/2.jpg">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/src/camera.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-81">
+              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FaceDataNew/s1/3.jpg">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/src/imageFunctions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-914">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1404">
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/img_read.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-              <folding>
-                <element signature="e#25#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-659">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FaceDataNew/s1/4.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FaceDataNew/s5/1.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/face_recog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            <state>
+              <folding>
+                <element signature="e#26#44#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/face_cropper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/haarcascade_frontalface_default.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -152,10 +170,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/webcam.py" />
-        <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/face_recog.py" />
         <option value="$PROJECT_DIR$/src/face_cropper.py" />
+        <option value="$PROJECT_DIR$/src/camera.py" />
+        <option value="$PROJECT_DIR$/src/face_recog.py" />
+        <option value="$PROJECT_DIR$/src/imageFunctions.py" />
         <option value="$PROJECT_DIR$/src/img_read.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
       </list>
     </option>
   </component>
@@ -205,7 +225,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.face_recog (1)">
+  <component name="RunManager" selected="Python.main">
     <configuration name="face_recog (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IASR" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -303,7 +323,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="demo" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -320,9 +340,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.face_recog (1)" />
         <item itemvalue="Python.img_read (1)" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.face_recog" />
         <item itemvalue="Python.img_read" />
       </list>
@@ -343,21 +363,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49682036" weight="0.3285968" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49602544" weight="0.3285968" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50317967" side_tool="true" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50397456" side_tool="true" visible="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -389,9 +408,6 @@
     <entry file="file://$PROJECT_DIR$/src/dB/s1/3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/haarcascade_frontalface_default.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dB/s1/2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -401,31 +417,11 @@
     <entry file="file://$PROJECT_DIR$/src/FaceDataNew/s1/1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="48" column="29" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FaceDataNew/s1/2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FaceDataNew/s1/3.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img_read.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-          <folding>
-            <element signature="e#25#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FaceDataNew/s1/4.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -433,12 +429,9 @@
     <entry file="file://$PROJECT_DIR$/src/FaceDataNew/s5/1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dB/s1/1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/face_cropper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="255">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -446,10 +439,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/dB/s1/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1404">
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-81">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/face_recog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        <state>
+          <folding>
+            <element signature="e#26#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haarcascade_frontalface_default.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imageFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-914">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img_read.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-659">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-319">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
         </state>
       </provider>
     </entry>

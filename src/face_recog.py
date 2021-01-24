@@ -1,12 +1,7 @@
-# -*- coding: utf-8 -*-
-
-
 import numpy as np
 
-from facerecognition import img_read
+from src import img_read
 
-
-print("deneme")
 image_width = 100
 image_length = 100
 total_pixels = image_width*image_length

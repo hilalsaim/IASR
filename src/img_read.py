@@ -1,17 +1,7 @@
-# -*- coding: utf-8 -*-
-
 import cv2
-
 import os.path
-
-import numpy as np
-
-from PIL import Image, ImageOps
-
 import numpy as np
 from sklearn.model_selection import train_test_split
-
-from facerecognition import gfxy
 
 faces_dir = 'dB/'
 
@@ -56,7 +46,7 @@ for face_id in range(1, faces_count + 1):
         cur_img += 1
         print(cur_img)
 
-        cv2.imwrite("training_images/"+"s"+"%d"%face_id+"/%d.pgm" % training_id, img2)#creating new image
+        cv2.imwrite("cropped_Faces/"+"s"+"%d"%face_id+"/%d.pgm" % training_id, img2)#creating new image
 
         print ('> Initializing ended')
 

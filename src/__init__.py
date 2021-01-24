@@ -45,8 +45,7 @@ class EigenFaces(object):
         return "PCA (num_components=%d)" % (self._num_components)
 
 
-def read_images(sz=None):
-    class_samples_list = []
+def read_images():
     class_matrices_list = []
     images, image_labels = [], []
     for dirname, dirnames, filenames in os.walk('cropped_Faces'):
@@ -55,9 +54,6 @@ def read_images(sz=None):
             class_samples_list = []
             for filename in os.listdir(subject_path):
                     im = Image.open(os.path.join(subject_path, filename))
-                    # resize to given size (if given) e.g., sz = (480, 640)
-                    if (sz is not None):
-                        im = im.resize(sz, Image.ANTIALIAS)
                     images.append(np.asarray(im, dtype = np.uint8))
 
                     # adds each sample within a class to this List

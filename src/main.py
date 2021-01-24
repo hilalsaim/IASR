@@ -1,10 +1,9 @@
 import sys
 import os
-import cv2
 from src import camera
 
 
-def ensure_dir_exists(path):
+def dir_exists(path):
     if not os.path.isdir(path):
         os.mkdir(path)
 
@@ -14,7 +13,7 @@ def take_training_photos(name, n):
             normalized = face.gray().scale(100, 100)
 
             face_path = 'cropped_Faces/{}'.format(name)
-            ensure_dir_exists(face_path)
+            dir_exists(face_path)
             normalized.save_to('{}/{}.pgm'.format(face_path, i + 1))
 
             normalized.show()

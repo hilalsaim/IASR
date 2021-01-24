@@ -1,5 +1,4 @@
 import cv2
-
 from src import imageFunctions
 
 def cameraCapture():
@@ -7,7 +6,6 @@ def cameraCapture():
     if vc.isOpened():
         _, frame = vc.read()
         return imageFunctions.Image(frame)
-
 
 def openCamera():
     webcamera = cv2.VideoCapture(0)

@@ -1,5 +1,4 @@
 import numpy as np
-
 from src import img_read
 
 image_width = 100

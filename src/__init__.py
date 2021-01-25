@@ -79,8 +79,8 @@ def PCA(X):
     if dimension > num_data:
         covariancematrix = np.dot(X,X.T)
         eigenvalues,eigenvectors = np.linalg.eigh(covariancematrix)
-        tmp = np.dot(X.T,eigenvectors).T # this is the compact trick
-        projectionmatrix = tmp[::-1] # reverse since last eigenvectors are the ones we want
+        temp = np.dot(X.T,eigenvectors).T # this is the compact trick
+        projectionmatrix = temp[::-1] # reverse since last eigenvectors are the ones we want
         variance = np.sqrt(eigenvalues[::-1]) # reverse since eigenvalues are in increasing order
 
         for i in range(projectionmatrix.shape[1]):

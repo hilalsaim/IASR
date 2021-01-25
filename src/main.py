@@ -1,38 +1,22 @@
-import sys
-import os
-from src import camera
+import cv2
+from src import imageFunctions
 
+def cameraCapture():
+    vc = cv2.VideoCapture(0,cv2.CAP_DSHOW)
+    if vc.isOpened():
+        _, frame = vc.read()
+        return imageFunctions.Image(frame)
 
-def dir_exists(path):
-    if not os.path.isdir(path):
-        os.mkdir(path)
+def openCamera():
+    webcamera = cv2.VideoCapture(0)
+    success = True
 
-def take_training_photos(name, n):
-    for i in range(n):
-        for face in camera.cameraCapture().faces():
-            normalized = face.gray().scale(100, 100)
+    face_detector = imageFunctions.FaceDetector()
 
-            face_path = 'cropped_Faces/{}'.format(name)
-            dir_exists(face_path)
-            normalized.save_to('{}/{}.pgm'.format(face_path, i + 1))
+    while success:
+        success, frame = webcamera.read()
+        face_detector.show(imageFunctions.Image(frame), wait=False)
+        cv2.waitKey(20)
 
-            normalized.show()
+openCamera()
 
-
-def parse_command():
-    args = sys.argv[1:]
-    return args[0] if args else None
-
-def training():
-    name = input('Enter your name: ')
-    take_training_photos(name, 10)
-
-def main():
-    cmd = parse_command()
-    if cmd == 'train':
-        training()
-    elif cmd == 'demo':
-        camera.openCamera()
-
-if __name__ == "__main__":
-    main()

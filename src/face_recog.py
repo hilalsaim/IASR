@@ -1,8 +1,9 @@
 import numpy as np
 from src import img_read
 
-image_width = 100
-image_length = 100
+
+image_width = 64
+image_length = 64
 total_pixels = image_width*image_length
 
 images = 5
@@ -11,6 +12,7 @@ total_images = images*variants
 
 face_vector = []
 
+#Principal Component Analysis, or PCA, is a dimensionality-reduction method
 face_vector=img_read.X_train;
 print(face_vector.shape)
 avg_face_vector = face_vector.mean(axis=1)
@@ -38,7 +40,7 @@ test_weight=test_weightt.transpose()
 weights=weightst.transpose()
 a=np.square(test_weight-weights)
 
-index =  np.argmin(np.linalg.norm(a,axis=1 )) 
+index = np.argmin(np.linalg.norm(a,axis=1))
 #b=np.sum(np.square(a))
 #index = np.argmin(b)
 #

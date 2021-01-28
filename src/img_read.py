@@ -9,8 +9,8 @@ image_faces_count = 5  # number of faces used for training
 faces_count = 5  # number of faces used for testing
 
 l = image_faces_count * faces_count  # training images count
-m = 100  # number of columns of the image
-n = 100  # number of rows of the image
+m = 64  # number of columns of the image
+n = 64  # number of rows of the image
 mn = m * n  # length of the column vector
 
 print ('> Initializing started')
@@ -18,6 +18,13 @@ training_ids = []  # train image id's for every at&t face
 L = np.empty(shape=(mn, l), dtype='float64')  # each row of L represents one train image
 cur_img = 0
 
+# check if the file exists, otherwise create it
+def file_is_exists(path):
+    if not os.path.isdir(path):
+        os.mkdir(path)
+
+
+# cropping face from image
 def detect_face(img_path):
     img = cv2.imread(img_path)
 
@@ -25,7 +32,7 @@ def detect_face(img_path):
     x, y, w, h = detected_faces[0]  # focus on the 1st face in the image
 
     img = img[y:y + h, x:x + w]  # focus on the detected area
-    img = cv2.resize(img, (100, 100))
+    img = cv2.resize(img, (64, 64))
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     return img
 
@@ -46,7 +53,10 @@ for face_id in range(1, faces_count + 1):
         cur_img += 1
         print(cur_img)
 
-        cv2.imwrite("cropped_Faces/"+"s"+"%d"%face_id+"/%d.pgm" % training_id, img2)#creating new image
+        face_path = 'cropped_Faces/{}'.format("s"+"%d"%face_id)
+        file_is_exists(face_path)
+
+        cv2.imwrite("cropped_Faces/"+"s"+"%d"%face_id+"/%d.pgm" % training_id, img2) # save cropping face
 
         print ('> Initializing ended')
 

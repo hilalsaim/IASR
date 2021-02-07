@@ -54,7 +54,7 @@ for face_id in range(1, faces_count + 1):
         print(cur_img)
 
         face_path = 'cropped_Faces/{}'.format("s"+"%d"%face_id)
-        file_is_exists(face_path)
+        file_is_exists(face_path) # check if the file exists, otherwise create it
 
         cv2.imwrite("cropped_Faces/"+"s"+"%d"%face_id+"/%d.pgm" % training_id, img2) # save cropping face
 

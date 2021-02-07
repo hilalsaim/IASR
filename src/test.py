@@ -43,7 +43,7 @@ def predictFace(X):
     mDistance = np.finfo('float').max
     X = X - meanImage
 
-    for i in range(len(X)):
+    for i in range(len(imageLabels)):
         distance = 0
         if distance < mDistance:
             mDistance = distance
